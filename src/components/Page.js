@@ -23,7 +23,7 @@ function Page(props) {
 
         {props.body}
 
-        <Footer copyright={props.copyright} />
+        <Footer copyright={props.copyright} icp={props.icp} />
         {props.siteId && (
           <Tracking siteId={props.siteId} />
         )}

@@ -20,6 +20,7 @@ function Index(props) {
         body={Body({ summaryJson: SUMMARY_JSON })}
         copyright={CONFIG.copyright}
         siteId={CONFIG.siteId}
+        icp={CONFIG.icp}
       />
     </div>
   )

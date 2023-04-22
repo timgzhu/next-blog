@@ -5,11 +5,12 @@ function Footer(props) {
   const now = new Date()
 
   return (
-    <footer className="center w5 f6 tc mt4">
+    <footer className="center mw6 f6 tc mt4">
       <p>
         <span>&copy; </span>
         <span>{now.getFullYear()} </span>
-        <span>{props.copyright}</span>
+        <span>{props.copyright} </span>
+        {props.icp && (<span><a href="https://beian.miit.gov.cn/" target="_blank">{props.icp}</a></span>) }
       </p>
     </footer>
   )
